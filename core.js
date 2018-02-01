@@ -1,8 +1,8 @@
-﻿var request = require('request-promise')
+﻿var $ = require('jquery')
 
 module.exports = {
     get: function(url) {
-        return request(url)
+        return $.get(url)
     },
     mountQueryStr: function (query) {
         var parameters = []

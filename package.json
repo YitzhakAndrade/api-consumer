@@ -4,13 +4,20 @@
   "description": "ainda-nao-sei",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify main.js | uglifyjs > bundle.js",
+    "bundle-debug": "browserify main.js -o bundle.js -d",
+    "bundle-watch": "watchify main.js -o bundle.js -d -v"
   },
   "author": "Yitzhak Andrade",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.83.0",
-    "request-promise": "^4.2.2"
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "uglify-es": "^3.1.0",
+    "watchify": "^3.9.0"
   },
   "repository": {
     "type": "git",

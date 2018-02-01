@@ -3,13 +3,14 @@
 function createRoute(url, routeName) {
     return {
         get: function (id, subroute, query) {
+            var urlTemp = url
             var queryStr = core.mountQueryStr(query)
             var urlArr = [ routeName, id, subroute ]
             urlArr.forEach(function(e) {
-                if (e) url += '/' + e
+                if (e) urlTemp += '/' + e
             })
-            url += queryStr
-            return core.get(url)
+            urlTemp += queryStr
+            return core.get(urlTemp)
         }
     }
 }
