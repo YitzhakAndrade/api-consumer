@@ -1,7 +1,7 @@
 {
-  "name": "ainda-nao-sei",
-  "version": "1.0.0",
-  "description": "ainda-nao-sei",
+  "name": "rest-api-fetcher",
+  "version": "0.1.0",
+  "description": "rest-api-fetcher",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +21,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YitzhakAndrade/ainda-nao-sei.git"
+    "url": "https://github.com/YitzhakAndrade/rest-api-fetcher.git"
   }
 }
