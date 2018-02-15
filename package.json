@@ -1,6 +1,6 @@
 {
   "name": "rest-api-fetcher",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "rest-api-fetcher",
   "main": "index.js",
   "scripts": {
